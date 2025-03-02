@@ -14,14 +14,8 @@ on:
         default: true
 
 jobs:
-  build-kernel-a15-gs201:
-    uses: ./.github/workflows/gs201.yml
-    secrets: inherit
   build-kernel-a15-zuma:
     uses: ./.github/workflows/zuma.yml
-    secrets: inherit
-  build-kernel-a15-zumapro:
-    uses: ./.github/workflows/zumapro.yml
     secrets: inherit
 
   trigger-release:
